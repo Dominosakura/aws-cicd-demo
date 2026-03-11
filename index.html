@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AWS CI/CD Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>AWS CI/CD Pipeline Demo</h1>
+
+    <p>This website is deployed automatically using AWS services.</p>
+
+    <ul>
+        <li>AWS CodePipeline</li>
+        <li>AWS CodeBuild</li>
+        <li>Amazon S3</li>
+    </ul>
+
+    <button onclick="show()">Click Test</button>
+
+    <p id="msg"></p>
+
+    <script>
+        function show()
+        {
+            document.getElementById("msg").innerHTML = "Deployment Successful!";
+        }
+    </script>
+
+</body>
+
+</html>
