@@ -1,35 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>AWS CI/CD Demo</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>AWS CI/CD Final Project</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>AWS Final Project Demo</h1>
+<header class="hero">
 
-    <p>This website is deployed automatically using AWS services.</p>
+<h1>AWS CI/CD Pipeline Demo</h1>
 
-    <ul>
-        <li>AWS CodePipeline</li>
-        <li>AWS CodeBuild</li>
-        <li>Amazon S3</li>
-    </ul>
+<p>
+Automatic Website Deployment using AWS Cloud Services
+</p>
 
-    <button onclick="show()">Click Test</button>
+<button onclick="scrollToDemo()">View Demo</button>
 
-    <p id="msg"></p>
+</header>
 
-    <script>
-        function show()
-        {
-            document.getElementById("msg").innerHTML = "Deployment Successful!";
-        }
-    </script>
+
+<section class="about">
+
+<h2>About This Project</h2>
+
+<p>
+This project demonstrates Continuous Integration and Continuous Deployment (CI/CD)
+using AWS services. When code is pushed to GitHub, AWS CodePipeline automatically
+deploys the updated website to Amazon S3.
+</p>
+
+</section>
+
+
+<section class="services">
+
+<h2>AWS Services Used</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>CodePipeline</h3>
+<p>Automates the entire CI/CD workflow from GitHub to deployment.</p>
+</div>
+
+<div class="card">
+<h3>CodeBuild</h3>
+<p>Builds and prepares the application before deployment.</p>
+</div>
+
+<div class="card">
+<h3>Amazon S3</h3>
+<p>Hosts the static website and delivers it globally.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="demo" id="demo">
+
+<h2>Deployment Test</h2>
+
+<p>Click the button below to test JavaScript functionality.</p>
+
+<button onclick="showMessage()">Test Deployment</button>
+
+<p id="msg"></p>
+
+</section>
+
+
+<footer>
+
+<p>AWS Cloud Computing Project | CI/CD Demo</p>
+
+</footer>
+
+
+<script>
+
+function showMessage()
+{
+document.getElementById("msg").innerHTML =
+"Deployment Successful! 🚀";
+}
+
+function scrollToDemo()
+{
+document.getElementById("demo").scrollIntoView({
+behavior: "smooth"
+});
+}
+
+</script>
 
 </body>
-
 
 </html>
